@@ -1,0 +1,155 @@
+/*Get zomato app*/
+.zom-app {
+	background-color: #FFFBF7;
+	margin: 100px auto;
+	padding-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.zom-app img {
+	/* height: 350px; */
+	width: 20%;
+}
+
+.zom-app .zom-app-right {
+	margin-left: 50px;
+	width: 450px;
+}
+.radio-btn{
+		accent-color: rgb(255,92,92);
+		width: 20px;
+		height: 20px;
+		/* background-color: black; */
+}
+
+.zom-app .zom-app-right h1{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.zom-app .zom-app-right p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.zom-app-right .radio-btn {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 50%;
+	padding-right: 50px;
+	margin-bottom: 20px;
+}
+.form-control{
+	width: 98%;
+	/* border-radius: 5%; */
+}
+
+.zom-app-right .radio-btn input[type="radio"] {
+	transform: scale(1.5);
+	margin-right: 10px;
+  
+  /* border: 2 solid red; */
+}
+
+.zom-app-right .email-phone {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+  /* border:  4px solid red; */
+}
+
+.zom-app-right input[type="text"] {
+	padding: 12px 12px;
+	border-radius: 5px;
+	border: 1px solid #cfcfcf;
+	margin-right: 10px;
+}
+
+.zom-app-right a.btn-share {
+	color: #fff;
+    box-sizing: border-box;
+    background-color: #ed5a6b;
+    border-radius: 4px;
+    padding: 14px;
+    height:  3.3rem;
+    font-size: 1rem;
+    flex: none;
+    text-decoration: none;
+}
+
+.zom-app-right a.btn-share:hover {
+	background-color: #ec4654;
+}
+
+.sele{
+	position:relative;
+	/* top: 10px; */
+	/* width: 15px;
+	margin-top: 20px;
+	padding: 10px; */
+}
+.zom-app-right .app-store {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.zom-app-right p.small-text {
+	color: #9c9c9c;
+	margin-top: 20px;
+}
+
+.zom-app-right .app-store .app-image {
+	margin-right: 20px;
+}
+
+.zom-app-right .app-store img {
+	width: 137px;
+	height: 40px;
+}
+/*Mobile View*/
+@media(max-width: 500px) {
+	.showcase {
+		height: 500px;
+	}
+
+	.hero-text .search-bar {
+		width: 100%;
+	}
+
+	.search-3 {
+		display: none;
+	}
+
+	.order-cat {
+	grid-template-columns: repeat(2, 1fr);
+	}
+
+	.collections {
+	flex-direction: column;
+	justify-content: center;
+	}
+
+	.collection-grid {
+	grid-template-columns: repeat(2, 1fr);
+	}
+
+	.locals-grid {
+	grid-template-columns: repeat(1, 1fr);
+	}
+
+	.zom-app {
+		padding-left: 20px;
+		padding-right: 20px;
+		flex-direction: column;
+	}
+
+	.zom-app .zom-app-right {
+	margin-left: 20px;
+	width: 100%;
+	}   
+
+}

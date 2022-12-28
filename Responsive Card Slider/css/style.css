@@ -1,0 +1,151 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%; 
+  padding: 40px 0;
+
+  /* margin: 0px 40px; */
+}
+.heading{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: Okra, Helvetica, sans-serif;
+
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  /* border-radius: 25px; */
+  /* background-color: #FFF; */
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 30px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  box-shadow: #333;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-self: flex-start;
+  box-sizing: border-box;
+  /* padding: 5px; */
+  /* align-items: flex-start; */
+
+}
+.description{
+  font-size: 16px;
+  color: #707070;
+  /* text-align: center; */
+  text-align: justify;
+}
+.more{
+  border: none;
+  font-size: 16px;
+  color: #6E93f7;
+   border-radius: 6px;
+  margin: 6px;
+  cursor: pointer;
+  border: transparent;
+  display: flex;
+  align-self: flex-start;
+
+}
+.more:hover{
+  color: #265DF2;
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 26px;
+  width: 27px;
+  height: 29px;
+ 
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px, rgb(0 0 0 / 14%) 0px 6px 10px 0px, rgb(0 0 0 / 12%) 0px 1px 18px 0px;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  /* margin-left: 8px; */
+  margin-top: 76px;
+  padding: 8px;
+
+  
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+  /* width: 24px; */
+}
+/* .swiper-pagination-bullet{
+  /* background-color: #6E93f7; 
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  /* background-color: #4070F4; 
+} */
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
